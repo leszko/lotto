@@ -1,8 +1,8 @@
 const main = async () => {
     const lottoContractFactory = await hre.ethers.getContractFactory("LottoPortal");
     const lottoContract = await lottoContractFactory.deploy();
-    await waveContract.deployed();
-    console.log("LottoPortal address: ", waveContract.address);
+    await lottoContract.deployed();
+    console.log("LottoPortal address: ", lottoContract.address);
   };
   
   const runMain = async () => {
