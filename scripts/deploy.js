@@ -1,12 +1,8 @@
 const main = async () => {
-    const waveContractFactory = await hre.ethers.getContractFactory("WavePortal");
-    const waveContract = await waveContractFactory.deploy({
-      value: hre.ethers.utils.parseEther("0.001"),
-    });
-  
+    const lottoContractFactory = await hre.ethers.getContractFactory("LottoPortal");
+    const lottoContract = await lottoContractFactory.deploy();
     await waveContract.deployed();
-  
-    console.log("WavePortal address: ", waveContract.address);
+    console.log("LottoPortal address: ", waveContract.address);
   };
   
   const runMain = async () => {
